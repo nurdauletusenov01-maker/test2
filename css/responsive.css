@@ -1,0 +1,113 @@
+@media(max-width:850px) {
+
+    .nav-links,
+    .nav-cta {
+        display: none
+    }
+
+    .menu-btn {
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+        gap: 5px;
+        border: 0;
+        background: none
+    }
+
+    .menu-btn span {
+        width: 25px;
+        height: 2px;
+        background: #111
+    }
+
+    .nav-links.open {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 20px 24px;
+        flex-direction: column;
+        background: #fff
+    }
+
+    .hero-grid,
+    .calculator,
+    .exam,
+    .faq-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px
+    }
+
+    .hero-visual {
+        height: 350px
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .section {
+        padding: 70px 0
+    }
+}
+
+@media(max-width:520px) {
+    .container {
+        width: calc(100% - 32px)
+    }
+
+    h1 {
+        font-size: 36px
+    }
+
+    .section h2,
+    .contact h2 {
+        font-size: 30px
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .instructor-grid,
+    .feature-grid,
+    .classes,
+    .steps {
+        grid-template-columns: 1fr
+    }
+
+    .instructor {
+        height: 300px
+    }
+
+    .footer {
+        display: block
+    }
+
+    .footer p {
+        margin-top: 10px
+    }
+
+    .split-heading {
+        display: block
+    }
+
+    .split-heading>p {
+        margin-top: 12px
+    }
+}
